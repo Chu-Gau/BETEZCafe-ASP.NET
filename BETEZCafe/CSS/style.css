@@ -1,0 +1,302 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: unset;
+    outline:0 !important;/*remove the blue outline of button*/ 
+}
+
+html, body{
+    height: 100%;
+}
+
+.container {
+    width: 960px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.navbar {
+    height: 100px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    /*vertical center things*/
+    display: flex;
+    align-items: center;
+}
+
+.navbar li {
+    display: inline-block;
+    padding: 30px;
+}
+
+.navbar nav {
+    float: right;
+}
+
+.navbar li > a {
+    font-family: 'Shadows Into Light Two', cursive;
+    color: rgb(255, 240, 213);
+    font-size: 28px;
+}
+
+.navbar .login-button{
+    display: block;
+    float: right;
+    border: 1px solid saddlebrown;
+    border-radius: 10px;
+    padding: 10px 15px;
+    margin-right: 30px;
+    transition: background-color 0.1s;
+    -webkit-transition: background-color 0.1s;
+    -moz-transition: background-color 0.1s;
+}
+
+.login-button a{
+    color: wheat;
+    font-family: 'Anton', Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+    font-size: 20px;
+}
+
+.login-button:hover {
+
+    background-color: #431404;
+}
+
+#logo {
+    float: left;
+    padding: 20px 0;
+}
+
+#logo a {
+    font-size: 36px;
+    font-family: "Kaushan Script", Arial, Helvetica, sans-serif;
+    color: whitesmoke;
+}
+
+#slogan {
+    width: 100%;
+    overflow: auto;
+}
+
+#slogan img {
+    width: 100%;
+    display: block;
+}
+
+#slogan #words {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+
+#slogan #words p {
+    color: #ffcc91;
+    font-family: "Cookie", Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-align: center;
+}
+
+#menu {
+    background-image: url("/Content/images/menubackground.jpg");
+    background-size: 100% auto;
+    width: 100%;
+    background-repeat: repeat-y;
+    overflow: auto;
+}
+
+.menu-header {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.menu-header img {
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-header p {
+    text-align: center;
+    font-family: "Kaushan Script", Arial, Helvetica, sans-serif;
+    color: #fedfc0;
+    font-size: 75pt;
+}
+
+.menu-content {
+    overflow: auto;
+}
+
+.product {
+    float: left;
+    margin-right: 20px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.product-thumbnail {
+    width: 300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.thumbnail-overlay{
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-transition: opacity 0.5s;
+    -moz-transition: opacity  0.5s;
+    transition: opacity 0.5s;
+    border: none;
+    /*đoạn css dưới để center cái button*/
+    display: flex;
+    align-items: center;
+}
+
+.thumbnail-overlay p{
+    display: block;
+    color: wheat;
+    font-size: 24pt;
+    margin: auto;
+    border-top: solid wheat 2px;
+    border-bottom: solid wheat 2px;
+    padding: 0.5em;
+    font-family: "Dancing Script", Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+
+.product-thumbnail:hover .thumbnail-overlay{
+    opacity: 1;
+}
+
+
+.product-price {
+    width: 120px;
+    height: 120px;
+    background-color: rgba(144, 51, 22, 0.8);
+    border: 5px solid wheat;
+    border-style: dotted;
+    border-radius: 100%;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    box-shadow: hsla(14, 88%, 6%, 0.8) 5px 5px 5px;
+}
+
+.product-price p {
+    font-family: "Gloria Hallelujah", Arial, Helvetica, sans-serif;
+    font-size: 32pt;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 120px;
+    color: 	#F5F5F5;
+}
+.product-name{
+    font-family: "Pacifico", 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: wheat;
+    text-align: center;
+    font-size: 26pt;
+}
+
+.cart-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    padding-top: 100px;
+}
+.cart{
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100%;
+    width: 150px;
+    overflow-y: auto;
+    padding-top: 15px;
+}
+
+.cart::-webkit-scrollbar{
+    display: none;
+}
+
+.cart-products{
+    overflow: auto;
+}
+.cart-product{
+    display: none;
+    overflow: auto;
+    margin-bottom: 10px;
+    position: relative;
+}
+.cart-product-thumbnail{
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 1px antiquewhite dashed;
+    background-size: cover;
+    background-position: center center;
+    margin: 0 auto;
+}
+
+.cart-product-name{
+    font-family: "Pacifico", 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: wheat;
+    text-align: center;
+    font-size: 12pt;
+} 
+
+.cart-product-quantity{
+    font-family: "Gloria Hallelujah", Arial, Helvetica, sans-serif;
+    color: wheat;
+    background-color: #431404;
+    border-radius: 100%;
+    border: 1px antiquewhite dashed;
+    text-align: center;
+    line-height: 35px;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 0;
+    right: 18px;
+    display: none;
+}
+
+.cart-button{
+    margin-top: 20px;
+    /*margin: 10px auto;*/
+    width: 100%;
+    border-top: 1px solid saddlebrown;
+    border-bottom: 1px solid saddlebrown;
+    padding: 5px 10px;
+    overflow: auto;
+    color: wheat;
+    font-size: 24pt;
+    align-content: center;
+    text-align: center;
+    float: right;
+}
+
+.cart-button span{
+    font-family: "Dancing Script", 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14pt;
+}
+
+.footer{
+    background-color: black;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 5px 0;
+}
+
+.footer p{
+    color: snow;
+}
+.footer span{
+    color: darkgreen;
+}

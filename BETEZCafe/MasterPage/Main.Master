@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Main.Master.cs" Inherits="BETEZCafe.MasterPage.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <title>BETEZCafe</title>
+    <link rel="icon" href="content/images/logo.png">
+    <link rel="stylesheet" type="text/css" href="/Css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Audiowide|Baloo|Chewy|Cookie|Fjalla+One|Gloria+Hallelujah|Kaushan+Script|Lobster|PT+Sans+Narrow|Pacifico|Righteous"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <%--Nav bar--%>
+    <div class="navbar">
+        <div class="container">
+            <div id="logo"><a href="#">BETEZ Café</a></div>
+            <nav>
+                <ul>
+                    <li><a href="#menu">MENU</a></li>
+                    <li><a href="#">KHUYẾN MÃI</a></li>
+                    <li><a href="#">ĐỊA ĐIỂM</a></li>
+                    <li><a href="#">GIỚI THIỆU</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="login-button"><a href="login.php">Đăng nhập</a></div>
+    </div>
+
+
+    <%--Main content--%>
+    <asp:ContentPlaceHolder ID="mainContentHolder" runat="server"></asp:ContentPlaceHolder>
+
+    <div class="footer">
+        <div class="container">
+            <p>
+                ®Powered by <span>BETEZ Team</span>
+            </p>
+        </div>
+    </div>
+    <%--script--%>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <asp:ContentPlaceHolder ID="scripts" runat="server"></asp:ContentPlaceHolder>
+
+</body>
+</html>

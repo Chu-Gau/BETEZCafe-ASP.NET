@@ -1,0 +1,74 @@
+﻿[
+  {
+    "id": 1,
+    "name": "Dark Coffee",
+    "img": "black-coffee.jpg",
+    "price": 30
+  },
+  {
+    "id": 2,
+    "name": "Mocha",
+    "img": "cafe-mocha.jpg",
+    "price": 35
+  },
+  {
+    "id": 3,
+    "name": "Cappuccino",
+    "img": "capuchino.jpg",
+    "price": 30
+  },
+  {
+    "id": 4,
+    "name": "Hazelnut Coffee",
+    "img": "Hazelnut-Coffee.jpg",
+    "price": 35
+  },
+  {
+    "id": 5,
+    "name": "Black Tea",
+    "img": "hong-tra.jpg",
+    "price": 25
+  },
+  {
+    "id": 6,
+    "name": "Matcha",
+    "img": "matcha.jpg",
+    "price": 30
+  },
+  {
+    "id": 7,
+    "name": "Milk Coffee",
+    "img": "milked-coffee.jpg",
+    "price": 30
+  },
+  {
+    "id": 8,
+    "name": "Fruit Yogurt",
+    "img": "sua-chua-mit.jpg",
+    "price": 20
+  },
+  {
+    "id": 9,
+    "name": "Oolong Tea",
+    "img": "tra-o-long.jpg",
+    "price": 25
+  },
+  {
+    "id": 10,
+    "name": "Honey Tea",
+    "img": "tra-xanh-mat-ong.jpg",
+    "price": 30
+  },
+  {
+    "id": 11,
+    "name": "Lattea",
+    "img": "tra-xanh-sua.jpg",
+    "price": 40
+  },
+  {
+    "id": 12,
+    "name": "Sữa Chua Nếp Cẩm",
+    "img": "sua-chua-nep-cam.jpg",
+    "price": 30
+  }
+]
